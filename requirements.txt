@@ -1,7 +1,5 @@
 streamlit
 python-dotenv
 requests
-youtube_transcript_api
 time
-GoogleTranslator
 pandas
