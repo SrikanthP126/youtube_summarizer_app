@@ -1,0 +1,8 @@
+streamlit
+python-dotenv
+requests
+youtube_transcript_api
+langchain_community
+time
+GoogleTranslator
+pandas
