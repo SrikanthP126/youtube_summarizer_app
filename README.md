@@ -52,3 +52,37 @@ Open your web browser and navigate to `http://localhost:8501` to access the Stre
 - Generate an API key under "Credentials"
 - Add it to your .env file as YOUTUBE_API_KEY
 
+---
+## 🚀 How to Use
+
+1️⃣ Enter a YouTube video URL
+2️⃣ Click Summarize
+3️⃣ Get a structured summary
+4️⃣ Choose language for translation
+5️⃣ Save & revisit past summaries
+
+---
+## 📷 Demo Screenshot
+![Youtube Summarizer in Action](Network_server.png)  
+
+
+---
+## ⚠️ Limitations
+- API Quota Limits: Groq & YouTube APIs may limit requests per day
+- YouTube Captions: Some videos have no transcripts, so they can't be summarized
+- Model Accuracy: AI-generated summaries may miss minor details
+
+---
+## 📜 License
+This project is open-source under the MIT License.
+You are free to modify, distribute, and use this project.
+
+---
+## ⭐ Support
+If you like this project, give it a star ⭐ on GitHub!
+Follow for more AI-based projects.
+
+🔗 Connect with me on LinkedIn: https://www.linkedin.com/in/penta-srikanth/
+📩 Email: srikanth.p126@gmail.com
+
+
