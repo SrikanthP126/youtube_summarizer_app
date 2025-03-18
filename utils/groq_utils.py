@@ -16,7 +16,7 @@ def summarize_text(text, video_title):
 
         prompt = f"""
     You are an AI assistant trained to summarize YouTube video transcripts with detailed explanations.
-    Your task is to **extract key insights, explain concepts in detail with real time examples to unserstand better, and provide a structured summary**.
+    Your task is to **extract key insights, explain concepts in detail with real time examples to unserstand better than the original content, and provide a concise summary of the video transcript**.
     Summarize the YouTube video: **{video_title}**.
     📌 **Guidelines for Summarization:**
     - Provide an **overview of the video’s core message**.
@@ -27,7 +27,7 @@ def summarize_text(text, video_title):
     - **Avoid generic summaries**—instead, deliver an **educational-style breakdown**.
 
     📌 **Structured Summary Format:**
-    1️⃣ **Introduction & Context:** What is the video about? Why is this topic important? Who is speaking?
+    1️⃣ **Introduction & Context:** What is the video about? explain concepts in detail with real time examples to unserstand better than the original content, and provide a concise summary of the video transcript.
     2️⃣ **Key Concepts & Insights:** Summarize major ideas in a way that helps a beginner understand.
     3️⃣ **Step-by-Step Explanations:** If the video teaches something, outline the process or method in a structured way.
     4️⃣ **Important Quotes or Examples:** Capture any relevant analogies, frameworks, or real-world applications.
@@ -36,7 +36,7 @@ def summarize_text(text, video_title):
     Here is the transcript: {text}
     """
         data = {
-            "model": "llama3-70b-8192",
+            "model": "llama-3.3-70b-versatile",
             "messages": [{"role": "user", "content": prompt}]
         }
 
