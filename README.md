@@ -55,11 +55,14 @@ Open your web browser and navigate to `http://localhost:8501` to access the Stre
 ---
 ## 🚀 How to Use
 
-1️⃣ Enter a YouTube video URL
-2️⃣ Click Summarize
-3️⃣ Get a structured summary
-4️⃣ Choose language for translation
-5️⃣ Save & revisit past summaries
+## 🚀 How to Use
+
+1️⃣ **Enter a YouTube video URL**  
+2️⃣ **Click Summarize**  
+3️⃣ **Get a structured summary**  
+4️⃣ **Choose language for translation**  
+5️⃣ **Save & revisit past summaries**
+
 
 ---
 ## 📷 Demo Screenshot
