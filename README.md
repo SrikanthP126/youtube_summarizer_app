@@ -84,5 +84,3 @@ Follow for more AI-based projects.
 
 🔗 Connect with me on LinkedIn: https://www.linkedin.com/in/penta-srikanth/
 📩 Email: srikanth.p126@gmail.com
-
-
