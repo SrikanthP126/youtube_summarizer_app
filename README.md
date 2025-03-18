@@ -55,8 +55,6 @@ Open your web browser and navigate to `http://localhost:8501` to access the Stre
 ---
 ## 🚀 How to Use
 
-## 🚀 How to Use
-
 1️⃣ **Enter a YouTube video URL**  
 2️⃣ **Click Summarize**  
 3️⃣ **Get a structured summary**  
