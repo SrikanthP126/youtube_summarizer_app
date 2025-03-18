@@ -1,5 +1,6 @@
 streamlit
 python-dotenv
 requests
-time
-pandas
+google-api-python-client
+groq
+youtube-transcript-api
