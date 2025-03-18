@@ -1,6 +1,6 @@
 streamlit
 python-dotenv
 requests
-google-api-python-client
 groq
+deep-translator
 youtube-transcript-api
