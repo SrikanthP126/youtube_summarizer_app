@@ -64,7 +64,7 @@ Open your web browser and navigate to `http://localhost:8501` to access the Stre
 
 ---
 ## 📷 Demo Screenshot
-![Youtube Summarizer in Action](Network_server.png)  
+![Youtube Summarizer in Action](Demo.png)  
 
 
 ---
