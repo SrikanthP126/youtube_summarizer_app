@@ -1,0 +1,94 @@
+📘 Azure Cloud Infrastructure Provisioning Overview
+This document outlines the required Azure resources for setting up the CareFeraRSO Cloud Architecture, including essential parameters for provisioning each component.
+________________________________________
+🧱 App Service (Care/Fera UI)
+•	Resource Name: carefera-ui-appsvc
+•	Parameters:
+o	App Service Plan: ASE App Service Plan
+o	Runtime Stack: Node.js
+o	Region: ASE vNet Region
+o	VNet Integration: Enabled
+o	Authentication: Entra ID
+o	TLS: Enabled
+o	Environment: ASE
+________________________________________
+🧾 App Service (RSO Doc Upload)
+•	Resource Name: rso-docupload-appsvc
+•	Parameters:
+o	App Service Plan: ASE App Service Plan
+o	Runtime Stack: Node.js
+o	Region: ASE vNet Region
+o	VNet Integration: Enabled
+o	Authentication: Entra ID
+o	TLS: Enabled
+o	Environment: ASE
+________________________________________
+🔧 Function App
+•	Resource Name: carefera-functionapp
+•	Parameters:
+o	Runtime Stack: .NET or Node.js
+o	Region: ASE vNet Region
+o	App Service Plan: ASE App Service Plan
+o	VNet Integration: Enabled
+o	Linked Storage Account: Blob Storage
+o	Authentication: Managed Identity
+o	Environment: ASE
+________________________________________
+🗄️ Azure SQL Database
+•	Resource Name: carefera-sqldb
+•	Parameters:
+o	SQL Server Name: carefera-sqlserver
+o	Edition: Standard or Premium
+o	Max Size: Up to 1TB
+o	Backup Retention: 7–35 days
+o	VNet Rule: Enabled
+o	Authentication: Managed Identity
+________________________________________
+🔐 Azure Key Vault
+•	Resource Name: carefera-keyvault
+•	Parameters:
+o	Access Policies: App Services, Function App
+o	Secrets: DB Connection, Captcha Keys, SAS Keys
+o	Firewall and VNet Rules: Enabled
+o	Authentication: Managed Identity
+________________________________________
+🗃️ Storage Account (Blob)
+•	Resource Name: carefera-storage
+•	Parameters:
+o	Storage Tier: Hot
+o	Replication: GRS or LRS
+o	Containers: PDFUploads, Reports
+o	Firewall and VNet Rules: Enabled
+o	Authentication: Managed Identity
+________________________________________
+🌐 Application Gateway
+•	Resource Name: carefera-appgateway
+•	Parameters:
+o	SKU: WAF_v2
+o	Frontend IP: Public/Private
+o	Backend Pool: App Services
+o	Listeners: HTTPS (TLS 1.2)
+o	Rules: Path-Based Routing
+________________________________________
+📊 Azure Application Insights
+•	Resource Name: carefera-appinsights
+•	Parameters:
+o	Application Type: Web
+o	Retention Period: 90 Days
+o	Sampling: Enabled
+o	Private Link: Enabled
+________________________________________
+🛡️ Virtual Network (VNet)
+•	Resource Name: carefera-vnet
+•	Parameters:
+o	Subnets: AppSubnet, FunctionSubnet, DBSubnet, PrivateEndpointSubnet
+o	NSGs: Applied to each subnet
+o	Services Integrated: ASE, SQL DB, Key Vault, Storage
+________________________________________
+🏗️ App Service Environment (ASE)
+•	Resource Name: carefera-ase
+•	Parameters:
+o	VNet Integration: Dedicated Subnet
+o	Internal Load Balancer: Enabled
+o	Scale Settings: Manual or Auto
+
